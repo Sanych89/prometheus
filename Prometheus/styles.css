@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik Regular";
+}
+@font-face {
+  font-family: "Rubik Bold";
+  src: url(./Rubik/Rubik-Bold.ttf);
+}
+@font-face {
+  font-family: "Rubik Medium";
+  src: url(./Rubik/Rubik-Medium.ttf);
+}
+@font-face {
+  font-family: "Rubik Regular";
+  src: url(./Rubik/Rubik-Regular.ttf);
+}
+
+.container {
+  text-align: center;
+  min-width: 1940px;
+  margin: 0 auto;
+}
+.header {
+  background-color: rgb(227, 230, 237);
+  border-color: rgb(227, 230, 237);
+  display: grid;
+  width: 1940px;
+  align-items: center;
+  justify-items: start;
+  grid-template: 100px, 100px, 100px / 100px 100px 100px;
+}
+.header h1 {
+  position: relative;
+  grid-area: 1 / 5 / 1 / 9;
+  font-size: 50px;
+}
+.header_d_logo {
+  position: relative;
+  grid-area: 1 / 3 / 1 / 9;
+  height: 100px;
+}
+.header_d_img {
+  position: relative;
+  grid-area: 1 / 7 / 3 / 9;
+  background-color: rgb(227, 230, 237);
+  border-color: rgb(227, 230, 237) 30px;
+}
+.header a {
+  grid-area: 2 / 5 / 9 / 9;
+}
+
+.button {
+  height: 36 px;
+  color: #fff;
+  font-size: 16px;
+  background-color: rgb(18, 86, 155);
+  border-color: transparent;
+  border-radius: 13px;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: rgba(18, 86, 155, 0.8);
+}
+.button:active {
+  background-color: rgba(18, 86, 155, 0.7);
+}
+.button_header {
+  width: 200px;
+  height: 70px;
+  position: relative;
+  grid-area: 1 / 5 / 9 / 9;
+  color: #fff;
+  font-size: 16px;
+  background-color: rgb(18, 86, 155);
+  border-radius: 30px;
+  border-color: transparent;
+  margin-bottom: 20px;
+}
+.button_header:hover {
+  cursor: pointer;
+  background-color: rgba(18, 86, 155, 0.8);
+}
+.button_header:active {
+  background-color: rgba(18, 86, 155, 0.7);
+}
+
+.button_bottom {
+  width: 260px;
+  height: 50px;
+  /*display: flex;
+  justify-content: flex-end;*/
+  color: #fff;
+  font-size: 16px;
+  background-color: rgb(18, 86, 155);
+  border-radius: 30px;
+  border-color: transparent;
+  margin-top: 70px;
+  margin-left: 5px;
+}
+.button_bottom:hover {
+  cursor: pointer;
+  background-color: rgba(18, 86, 155, 0.8);
+}
+.button_bottom:active {
+  background-color: rgba(18, 86, 155, 0.7);
+}
+
+.main {
+  position: relative;
+  font-size: 12px;
+  padding: 63px 94px 0 94px;
+  margin: 0 auto;
+}
+.main h2 {
+  margin-bottom: 25px;
+  font-size: 30px;
+  color: rgb(33, 32, 51);
+}
+.main p {
+  display: block;
+  width: 710px;
+  font-size: 20px;
+  color: rgb(33, 32, 51);
+  margin-left: auto;
+  margin-right: auto;
+}
+.main p:last-of-type {
+  margin-bottom: 52px;
+}
+.main_images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 20px;
+  /*max-height: 300px;*/
+}
+.main_images img {
+  height: 153px;
+  width: 305px;
+  border-radius: 12px;
+}
+.pay {
+  height: 400px;
+  margin: 0 auto;
+  /*padding: 0 94px;*/
+}
+.pay__form form {
+  display: flex;
+  width: 1400px;
+  margin: 0 auto;
+}
+.pay h2 {
+  font-family: "Rubik Medium";
+  font-size: 24px;
+  color: rgb(33, 32, 51);
+  letter-spacing: 1px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.pay__fonds {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-left: 200px;
+}
+.pay__fonds label {
+  position: relative;
+  height: 44px;
+  width: 300px;
+  line-height: 44px;
+  color: rgb(12, 105, 197);
+}
+.pay__fonds *:first-child {
+  margin-bottom: 16px;
+}
+.pay__fonds label:not(:last-of-type) {
+  margin-bottom: 12px;
+}
+input {
+  font-size: 18px;
+  padding-left: 24px;
+}
+input[type="radio"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+input[type="radio"] ~ span {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 22px;
+  background-color: transparent;
+  border: solid rgb(18, 86, 155) 1px;
+  cursor: pointer;
+}
+input[type="radio"]:checked ~ span {
+  background-color: rgb(18, 86, 155, 0.2);
+}
+input[type="radio"] ~ span::after {
+  content: "";
+}
+input[type="radio"]:checked ~ span::after {
+  content: "V";
+  right: 30px;
+  position: absolute;
+}
+.pay__1cardcol {
+  margin-left: 12px;
+  margin-right: 16px;
+}
+.pay__1cardcol > div {
+  display: flex;
+  justify-content: space-between;
+}
+.pay__1cardcol > div label {
+  display: inline-block;
+  width: 250px;
+  margin-left: 10px;
+}
+.pay__1cardcol > div label > input {
+  margin-left: 6px;
+}
+.pay__2cardcol input {
+  width: 100%;
+  display: flex;
+}
+.pay__card {
+  display: flex;
+  flex-direction: row;
+  width: 530px;
+}
+.pay__card > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pay__card label {
+  text-align: left;
+}
+.pay__card label > input {
+  height: 60px;
+  width: 100%;
+  border-radius: 12px;
+  border: solid rgb(18, 86, 155) 1px;
+  margin-top: 10px;
+}
+.footer {
+  height: 150px;
+  font-size: 20px;
+  width: 1940px;
+  background-color: rgb(18, 86, 155);
+  /*padding-top: 50px;*/
+}
+.footer *:first-child {
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArmyofDrones</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header">          
+          <img class="header_d_logo" src=./dronarmy_logo.jpg alt="drone logo" />
+          <img class="header_d_img" src=./drone.jpg alt="Drone image" />
+          <h1>Армія Дронів</h1>
+          <a href="#paysection">
+          <button class="button_header">Зробити внесок! </button></a>          
+        </div>
+      </header>
+
+      <main>        
+        <section class="main">
+          <h2>Мрієте, щоб ЗСУ стали ще сильніше, а палало аж до Москви?</h2>
+          <p>Кожен день наближає Україну до перемоги.</p>
+          <p>Наскільки довгим буде цей шлях - залежить від кожного з нас.</p>
+          <p>
+            Допоможіть зібрати кошти на дрони. Хлопці обіцяють - результат Вам
+            сподобається! Адже в кожного з нас єдине бажання, щоб зло на нашій
+            землі було знищено.
+          </p>          
+          <br>
+          <p>Ваш внесок важливий. Зробіть його просто зараз!</p>
+          
+
+          <div class="main_images">
+            <img src="dron1.jpg" alt="dron1" />
+            <img src="dron2.jpg" alt="dron2" />
+            <img src="dron3.jpg" alt="dron3" />
+            <img src="dron4.jpg" alt="dron4" />
+          </div>
+        </section>
+        <section class="pay"> 
+          <h2 id="paysection">Зробити благодійний внесок.</h2>
+          <div class="pay__form">
+          <form action= "/">                          
+              <div class="pay__fonds" >
+                <p>Оберіть фонд</p>
+                <label>
+                <input
+                 type="radio"
+                 name="foundation"
+                 value="foundation_Prytula"
+                />
+              <span> Фонд Сергія Притули</span>
+                </label>
+              <label>
+              <input
+                type="radio"
+                name="foundation"
+                value="foundation_Povernis"
+              />
+              <span>Фонд Повернись Живим</span>
+              </label>
+              <label>
+              <input type="radio" name="foundation" value="foundation_levi" />
+              <span>Фонд Леви на Джипі</span>
+              </label>
+              <label>
+              <input type="radio" name="foundation" value="foundation_nbu" />
+              <span>Рахунок НБУ</span>
+              </label>
+             </div>
+          <div class="pay__card">
+            <div class="pay__1cardcol">              
+              <label>               
+                Введіть номер картки
+                <input
+                  type="number" minlength="16" maxlength="16"
+                  required
+                  name="cardNuber"
+                  placeholder="XXXX XXXX XXXX XXXX"
+                />              
+              </label>             
+              <div>
+              <label>
+                  Введіть строк дії картки
+                  <input
+                    type="number" minlength="4" maxlength="4"
+                    required
+                    name="cardExpire"
+                    placeholder="XX/XX"
+                  />
+                </label>              
+                <label>
+                  Введіть CVV код картки
+                  <input
+                    type="number" minlength="3" maxlength="3"
+                    required
+                    name="cardCVV"
+                    placeholder="XXX"
+                  />
+                </label>
+              </div>
+            </div>
+            <div class="pay__2cardcol">
+                <label>
+                  Введіть ім'я власника картки
+                  <input
+                    type="text" minlength="4" maxlength="50"
+                    required
+                    name="cardowner"
+                    placeholder="TARAS SHEVCHENKO"
+                  />  
+                </label>
+                <button class="button_bottom" type="submit">Підтвердити внесок</button>
+              </div> 
+            </div>  
+            </form>
+            
+          
+        
+        </section>
+      
+      </main>
+    </div>
+      <footer>
+        <div class="footer">
+          <p style="text-align: center">
+            Створено як навчальний проєкт курсу "Знайомство з IT: тестдрайв
+            професій" від Prometheus.
+          </p>
+          <br />
+          <p style="text-align: center">Лихачов Олександр</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
